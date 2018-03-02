@@ -2,8 +2,7 @@ echo "Installing Homebrew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "Installing tools..."
-brew install git zsh zsh-completions vim golang node yarn nmap tmux wget python python3 watch docker docker-compose docker-machine xhyve docker-machine-driver-xhyve 
-firebase-cli heroku dockutil trash git-lfs
+brew install git zsh zsh-completions vim golang node yarn nmap tmux wget python python3 watch docker docker-compose docker-machine xhyve docker-machine-driver-xhyve firebase-cli heroku dockutil trash git-lfs
 
 sudo chown root:wheel /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
@@ -13,8 +12,8 @@ brew cask install unrarx visual-studio-code google-chrome iterm2 alfred vlc orig
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
 
 echo "Installing Oh My ZSH..."
-curl https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf\?raw\=true > ~/Library/Fonts/Inconsolata\ for\ Powerline.otf
-curl https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf?raw=true > ~/Library/Fonts/Inconsolata\ Bold\ for\ Powerline.ttf
+curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20for%20Powerline.otf > ~/Library/Fonts/Inconsolata\ for\ Powerline.otf
+curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf > ~/Library/Fonts/Inconsolata\ Bold\ for\ Powerline.ttf
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Setting up Vim..."
@@ -42,6 +41,14 @@ curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/vimrc 
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/iterm2Theme.json > ~/Desktop/itermProfile.json
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/gitconfig > ~/.gitconfig
+curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/vscodeSettings.json > ~/Library/Application\ Support/Code/User/settings.json
+
+echo "Generating ssh key..."
+ssh-keygen -t rsa -b 4096 -C "charles.catta@gmail.com"
+ssh-add -K ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub
+echo "\n\n SSH Key copied to clipboard \n\n"
+open -a "Safari" https://github.com/settings/keys
 
 echo "Opening useful links..."
 open -a "Safari" https://www.ublock.org
