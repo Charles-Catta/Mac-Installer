@@ -13,6 +13,8 @@ brew cask install unrarx visual-studio-code google-chrome iterm2 alfred vlc orig
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
 
 echo "Installing Oh My ZSH..."
+curl https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf\?raw\=true > ~/Library/Fonts/Inconsolata\ for\ Powerline.otf
+curl https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf?raw=true > ~/Library/Fonts/Inconsolata\ Bold\ for\ Powerline.ttf
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Setting up Vim..."
