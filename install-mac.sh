@@ -39,6 +39,7 @@ echo "Setting up Preferences...."
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/vimrc > ~/.vimrc
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/iterm2Theme.json > ~/Desktop/itermProfile.json
+curl https://raw.githubusercontent.com/Charles-Catta/Mac-Installer/master/gitconfig > ~/.gitconfig
 
 echo "Opening useful links..."
 open -a "Safari" https://www.ublock.org
