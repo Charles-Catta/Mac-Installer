@@ -11,11 +11,6 @@ echo "Installing Apps..."
 brew cask install unrarx visual-studio-code google-chrome iterm2 alfred vlc origami-studio adobe-creative-cloud ngrok
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
 
-echo "Installing Oh My ZSH..."
-curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20for%20Powerline.otf > ~/Library/Fonts/Inconsolata\ for\ Powerline.otf
-curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf > ~/Library/Fonts/Inconsolata\ Bold\ for\ Powerline.ttf
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 echo "Setting up Vim..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -59,3 +54,8 @@ open -a "Safari" http://mac-torrents.com/?s=clean+my+mac
 open -a "Safari" http://mac-torrents.com/?s=sketch
 open -a "Safari" http://mac-torrents.com/?s=adobe+zii
 open -a "Safari" http://peerflixy.herokuapp.com/
+
+echo "Installing Oh My ZSH..."
+curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20for%20Powerline.otf > ~/Library/Fonts/Inconsolata\ for\ Powerline.otf
+curl https://raw.githubusercontent.com/powerline/fonts/master/Inconsolata/Inconsolata%20Bold%20for%20Powerline.ttf > ~/Library/Fonts/Inconsolata\ Bold\ for\ Powerline.ttf
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
