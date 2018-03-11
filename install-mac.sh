@@ -8,7 +8,7 @@ sudo chown root:wheel /usr/local/opt/docker-machine-driver-xhyve/bin/docker-mach
 sudo chmod u+s /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 
 echo "Installing Apps..."
-brew cask install unrarx visual-studio-code google-chrome iterm2 alfred vlc origami-studio adobe-creative-cloud ngrok skala-color
+brew cask install unrarx visual-studio-code google-chrome iterm2 alfred vlc origami-studio adobe-creative-cloud ngrok skala-color imageoptim
 open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
 
 echo "Setting up Vim..."
