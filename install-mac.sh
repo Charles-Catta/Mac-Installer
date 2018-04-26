@@ -14,6 +14,9 @@ open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.
 echo "Setting up Vim..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
 
 echo "Setting up the Dock..."
 dockutil --remove all
