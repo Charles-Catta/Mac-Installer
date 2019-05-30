@@ -35,18 +35,19 @@ set backspace=indent,eol,start  " Make backspace work normally
 call plug#begin('~/.vim/plugged')
 
 Plug 'yggdroot/indentline' " displays thin vertical lines at each indentation level 
-Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'cpp'} " C++ syntax highlighting 
+" Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'cpp'} " C++ syntax highlighting 
 Plug 'gregsexton/matchtag', {'for': 'html'}  " Matches HTML tags
-Plug 'jiangmiao/auto-pairs' " Auto insert/delete brackets and quotes in pair
+" Plug 'jiangmiao/auto-pairs' " Auto insert/delete brackets and quotes in pair
 Plug 'pangloss/vim-javascript', {'for': 'js'}  " Javascript Syntax
 Plug 'hail2u/vim-css3-syntax', {'for': 'css'} " CSS syntax
-Plug 'mattn/emmet-vim', {'for': 'html'}    " Emmet
-Plug 'easymotion/vim-easymotion'        " EasyMotion for fast moving around
-Plug 'tpope/vim-surround'           " Surround to change surround quotes
+" Plug 'mattn/emmet-vim', {'for': 'html'}    " Emmet
+" Plug 'easymotion/vim-easymotion'        " EasyMotion for fast moving around
+" Plug 'tpope/vim-surround'           " Surround to change surround quotes
 Plug 'scrooloose/nerdtree'          " Display file tree
 Plug 'elzr/vim-json'                " Better JSON Support
 Plug 'scrooloose/syntastic'         " Syntax checker
 Plug 'shougo/neocomplcache.vim'     " Autocompleter
+Plug 'rizzatti/dash.vim'            " Dash integration
 call plug#end()
 " -------------- PLUGIN SETTINGS -------------------
 let g:vim_json_syntax_conceal = 0   " Don't conceal double quotes
