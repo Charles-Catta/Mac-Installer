@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 name = Charles Catta
-email = c.catta@phantomintelligence.com
+email = charles.catta@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
